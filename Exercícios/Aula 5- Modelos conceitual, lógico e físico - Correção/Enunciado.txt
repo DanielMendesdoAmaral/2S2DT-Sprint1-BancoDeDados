@@ -1,0 +1,20 @@
+Capacidades:
+1. Identificar as características de banco de dados relacionais e não-relacionais
+4. Elaborar diagramas de modelagem do banco de dados de acordo com a arquitetura definida (3)
+
+Tipo: Formativa
+
+Na atividade de hoje, faça as seguintes estruturas nos 3 modelos aprendidos em aula, entregue todos os arquivos como anexo: 
+
+1 - Uma clínica veterinária deseja cadastrar os pets que são atendidos na clínica. 
+A clínica contém um endereço;
+Os pets deverão ter nome, data de nascimento, tipo de pet;
+Os pets deverão ter raça;
+Os pets deverão ter donos;
+A clínica deseja cadastrar seus veterinários e todo atendimento de pet será feito por um vet;
+
+2 - A Optus é uma empresa no ramo musical que deseja realizar o gerenciamento dos lançamentos de novos cds de seus artistas. Cada álbum lançado poderá conter mais de um estilo vinculado (ex.: Indie e Folk).
+É importante que também você crie uma estratégia para que os usuários possuam acesso à plataforma.
+Os usuários deverão conter nome, email, senha e o tipo de permissão (eles podem ser do tipo administrador ou comum).
+
+3 - A Uber é uma empresa de corridas, onde os motoristas transportam seus passageiros para determinado destino escolhido pelo passageiro. Seguindo esta linha de pensamento: cada passageiro pode ter diversas formas de pagamento, assim como cada motorista pode ter diversas contas bancárias para recebimento. Uma corrida deve ter: partida, destino, data, hora e status.
