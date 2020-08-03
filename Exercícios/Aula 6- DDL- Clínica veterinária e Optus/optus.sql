@@ -1,0 +1,47 @@
+CREATE DATABASE optus;
+
+USE optus;
+CREATE TABLE Artista(
+	idArtista INT PRIMARY KEY IDENTITY NOT NULL,
+	nome VARCHAR(100) NOT NULL,
+	idade INT NOT NULL
+);
+
+USE optus;
+CREATE TABLE Album(
+	idAlbum INT PRIMARY KEY IDENTITY NOT NULL,
+	qtdMusicas INT NOT NULL,
+	descricao TEXT NOT NULL,
+	--FKs
+	idArtista INT FOREIGN KEY REFERENCES Artista(idArtista)
+);
+
+USE optus;
+CREATE TABLE Estilo(
+	idEstilo INT PRIMARY KEY IDENTITY NOT NULL,
+	nomeEstilo VARCHAR(30) UNIQUE NOT NULL
+);
+
+USE optus;
+CREATE TABLE AlbumEstilo(
+	idAlbumEstilo INT PRIMARY KEY IDENTITY NOT NULL,
+	--FKs
+	idAlbum INT FOREIGN KEY REFERENCES Album(idAlbum),
+	idEstilo INT FOREIGN KEY REFERENCES Estilo(idEstilo)
+);
+
+USE optus;
+CREATE TABLE TipoPermissao(
+	idTipoPermissao INT PRIMARY KEY IDENTITY NOT NULL,
+	tipo VARCHAR(15) UNIQUE NOT NULL 
+);
+
+USE optus;
+CREATE TABLE Usuario(
+	idUsuario INT PRIMARY KEY IDENTITY NOT NULL,
+	nome VARCHAR(100) NOT NULL,
+	email VARCHAR(75) UNIQUE NOT NULL,
+	senha VARCHAR(20) NOT NULL,
+	--FKs
+	idTipoPermissao INT FOREIGN KEY REFERENCES TipoPermissao(idTipoPermissao)
+);
