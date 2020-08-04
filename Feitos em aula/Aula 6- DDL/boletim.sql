@@ -63,3 +63,8 @@ USE boletim;
 ALTER TABLE Trabalho
 DROP COLUMN Teste;
 GO
+
+--Alterando a tabela com o uso do decimal. Coloque quantas casas ao todo e depois quantas casas terão depois da vírgula.
+USE boletim;
+ALTER TABLE Trabalho
+ALTER COLUMN Nota Decimal(10,2);
